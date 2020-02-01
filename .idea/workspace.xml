@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06721037-9e4c-487f-afc4-a8e4b60e4cfa" name="Default Changelist" comment="" />
+    <list default="true" id="06721037-9e4c-487f-afc4-a8e4b60e4cfa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0faaaf69-3b37-4fef-a88c-a2a0930366d8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0faaaf69-3b37-4fef-a88c-a2a0930366d8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/home.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/home.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,8 +41,36 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="eric@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="eric@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="eric@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="eric: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="eric@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="eric: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="projects: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="eric@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="eric: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="user: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
     </expand>
     <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
@@ -121,6 +161,7 @@
       <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
       <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
       <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-cors" />
     </include_path>
   </component>
   <component name="ProjectId" id="1X4VfEHNJEX3RfTLvfTxDZYM0gR" />
@@ -134,7 +175,7 @@
     <property name="DatabaseDriversLRU" value="mysql&#10;postgresql&#10;mariadb" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../example/back" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
@@ -157,7 +198,8 @@
       <workItem from="1580459579659" duration="185000" />
       <workItem from="1580487717893" duration="267000" />
       <workItem from="1580547766675" duration="333000" />
-      <workItem from="1580549647307" duration="149000" />
+      <workItem from="1580549647307" duration="952000" />
+      <workItem from="1580568074505" duration="7719000" />
     </task>
     <servers />
   </component>
@@ -173,25 +215,53 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="53" y="180" width="1437" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580459687238" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1580549707003">
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1580570123182">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580549707003" />
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580570123182" />
+    <state width="1877" height="437" key="GridCell.Tab.0.bottom" timestamp="1580579565921">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="437" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580579565921" />
+    <state width="1877" height="437" key="GridCell.Tab.0.center" timestamp="1580579565921">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="437" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580579565921" />
+    <state width="1877" height="437" key="GridCell.Tab.0.left" timestamp="1580579565921">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="437" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580579565921" />
+    <state width="1877" height="437" key="GridCell.Tab.0.right" timestamp="1580579565921">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="437" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580579565921" />
     <state width="218" height="477" key="HiddenNamespacesPopup" timestamp="1580391279812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="218" height="477" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1580391279812" />
+    <state x="777" y="443" key="NewPhpFileDialog" timestamp="1580569741665">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580569741665" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1580549740881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580549740881" />
-    <state x="748" y="389" key="com.intellij.ide.util.TipDialog" timestamp="1580549650816">
+    <state x="748" y="389" key="com.intellij.ide.util.TipDialog" timestamp="1580579666193">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="748" y="389" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580549650816" />
+    <state x="748" y="389" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580579666193" />
     <state x="790" y="245" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580308060615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="790" y="245" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580308060615" />
+    <state x="642" y="119" width="635" height="801" key="find.popup" timestamp="1580578567560">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="642" y="119" width="635" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580578567560" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1580569978260">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580569978260" />
   </component>
 </project>
