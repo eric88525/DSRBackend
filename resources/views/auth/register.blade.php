@@ -1,4 +1,3 @@
-<link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
 @extends('layouts.app')
 
 @section('content')
