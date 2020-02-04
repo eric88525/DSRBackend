@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06721037-9e4c-487f-afc4-a8e4b60e4cfa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/0faaaf69-3b37-4fef-a88c-a2a0930366d8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0faaaf69-3b37-4fef-a88c-a2a0930366d8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/home.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/home.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +59,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="eric: schema" type="ebfa3cd1:MariaImplModel$Schema" />
         <item name="projects: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="eric@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="eric: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="user: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -162,6 +156,7 @@
       <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
       <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1X4VfEHNJEX3RfTLvfTxDZYM0gR" />
@@ -200,6 +195,10 @@
       <workItem from="1580547766675" duration="333000" />
       <workItem from="1580549647307" duration="952000" />
       <workItem from="1580568074505" duration="7719000" />
+      <workItem from="1580648179651" duration="7374000" />
+      <workItem from="1580713843645" duration="1496000" />
+      <workItem from="1580795531927" duration="258000" />
+      <workItem from="1580806355747" duration="5197000" />
     </task>
     <servers />
   </component>
@@ -211,10 +210,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="721" y="243" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1580319279746" />
-    <state x="53" y="180" width="1437" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580459687238">
+    <state x="212" y="358" width="1437" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580648562442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="53" y="180" width="1437" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580459687238" />
+    <state x="212" y="358" width="1437" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580648562442" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1580570123182">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -239,18 +238,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="218" height="477" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1580391279812" />
-    <state x="777" y="443" key="NewPhpFileDialog" timestamp="1580569741665">
+    <state x="761" y="333" key="NewPhpClassDialog" timestamp="1580653522528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580569741665" />
+    <state x="761" y="333" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580653522528" />
+    <state x="777" y="443" key="NewPhpFileDialog" timestamp="1580653556530">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580653556530" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1580549740881">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580549740881" />
-    <state x="748" y="389" key="com.intellij.ide.util.TipDialog" timestamp="1580579666193">
+    <state x="748" y="389" key="com.intellij.ide.util.TipDialog" timestamp="1580806373140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="748" y="389" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580579666193" />
+    <state x="748" y="389" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580806373140" />
     <state x="790" y="245" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580308060615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
