@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06721037-9e4c-487f-afc4-a8e4b60e4cfa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_04_142229_create_members_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/home.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/home.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0faaaf69-3b37-4fef-a88c-a2a0930366d8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0faaaf69-3b37-4fef-a88c-a2a0930366d8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Projects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Members.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Members.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Member.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Member.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -174,7 +170,7 @@
     <property name="DatabaseDriversLRU" value="mysql&#10;postgresql&#10;mariadb" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../example/back" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
@@ -204,6 +200,7 @@
       <workItem from="1580795531927" duration="258000" />
       <workItem from="1580806355747" duration="17071000" />
       <workItem from="1580835988307" duration="1999000" />
+      <workItem from="1580923501977" duration="2522000" />
     </task>
     <servers />
   </component>
@@ -274,5 +271,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580569978260" />
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1580926531152">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1580926531152" />
   </component>
 </project>
