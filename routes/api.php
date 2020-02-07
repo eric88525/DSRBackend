@@ -23,8 +23,8 @@ Route::post('search','Projects@search');
 
 Route::post('login', 'Api\AuthController@login');
 
-Route::group(['prefix' => 'auth'], function () {
-    Route::get('/', 'AuthController@me');
-    Route::post('login', 'AuthController@login');
-    Route::post('logout', 'AuthController@logout');
+Route::group(['prefix'=>'Auth'],function () {
+    Route::post('register', 'MemberAuth@register');
+    Route::post('login', 'MemberAuth@login');
 });
+

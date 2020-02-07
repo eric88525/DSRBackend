@@ -4,10 +4,14 @@
     <list default="true" id="06721037-9e4c-487f-afc4-a8e4b60e4cfa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/0faaaf69-3b37-4fef-a88c-a2a0930366d8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0faaaf69-3b37-4fef-a88c-a2a0930366d8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Members.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Members.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Members.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Member.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Member.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_02_145614_create_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_02_145614_create_projects_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_04_091251_create_tests_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_04_142229_create_members_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_04_142229_create_members_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +57,21 @@
         <item name="eric@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="eric: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="members: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="eric@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="eric: schema" type="ebfa3cd1:MariaImplModel$Schema" />
         <item name="projects: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="eric@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="eric: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="users: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -201,6 +219,8 @@
       <workItem from="1580806355747" duration="17071000" />
       <workItem from="1580835988307" duration="1999000" />
       <workItem from="1580923501977" duration="2522000" />
+      <workItem from="1581064691974" duration="2134000" />
+      <workItem from="1581072052677" duration="8219000" />
     </task>
     <servers />
   </component>
@@ -216,6 +236,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="212" y="358" width="1437" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580648562442" />
+    <state x="570" y="260" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581077524728">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="570" y="260" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581077524728" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1580814024197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -253,27 +277,27 @@
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580549740881" />
     <state x="81" y="159" key="SettingsEditor/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1580822720540" />
-    <state x="655" y="378" key="com.intellij.ide.util.TipDialog" timestamp="1580835988346">
+    <state x="655" y="378" key="com.intellij.ide.util.TipDialog" timestamp="1581072089017">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="748" y="389" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580806373140" />
-    <state x="655" y="378" key="com.intellij.ide.util.TipDialog/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1580835988346" />
+    <state x="655" y="378" key="com.intellij.ide.util.TipDialog/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581072089017" />
     <state x="790" y="245" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580813261810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="790" y="245" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580813261810" />
-    <state x="562" y="116" width="635" height="801" key="find.popup" timestamp="1580826404291">
+    <state x="562" y="116" width="635" height="801" key="find.popup" timestamp="1581079294952">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="642" y="119" width="635" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580813453405" />
-    <state x="562" y="116" width="635" height="801" key="find.popup/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1580826404291" />
+    <state x="562" y="116" width="635" height="801" key="find.popup/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581079294952" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1580569978260">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580569978260" />
-    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1580926531152">
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1581080518646">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1580926531152" />
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581080518646" />
   </component>
 </project>
