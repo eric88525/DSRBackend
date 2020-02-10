@@ -11,7 +11,7 @@ class Member extends Model
     use Notifiable;
     protected $table = 'members';
     protected $fillable = [
-        'name', 'email', 'password','api_token'
+        'name', 'email', 'password','api_token','level'
     ];
     protected $hidden = [
         'password', 'api_token',

@@ -26,5 +26,6 @@ Route::post('login', 'Api\AuthController@login');
 Route::group(['prefix'=>'Auth'],function () {
     Route::post('register', 'MemberAuth@register');
     Route::post('login', 'MemberAuth@login');
+    Route::get('me','MemberAuth@me');
 });
 
