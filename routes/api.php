@@ -18,19 +18,20 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-
-
-
-Route::post('login', 'Api\AuthController@login');
-
 Route::group(['prefix'=>'Auth'],function () {
-    Route::post('register', 'MemberAuth@register');
     Route::post('login', 'MemberAuth@login');
+    Route::post('register', 'MemberAuth@register');
+});
+
+
+Route::group(['prefix'=>'Auth','middleware'=>'data'],function () {
     Route::get('me','MemberAuth@me');
     Route::get('logout','MemberAuth@logout');
 });
 
-Route::post('search','Projects@search');
 
+Route::group(['middleware'=>'data'],function () {
+    Route::post('search','Projects@search');
+    Route::get('projects','Projects@list');
+});
 
-Route::get('projects','Projects@list');

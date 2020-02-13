@@ -15,8 +15,8 @@ class CreateProjectsTable extends Migration
     {
 
         Schema::create('projects', function (Blueprint $table) {
-            $table->string('cn-customerName')->nullable($value = true);
-            $table->string('en-customerName')->nullable($value = true);
+            $table->string('customerNameCN')->nullable($value = true);
+            $table->string('customerNameEN')->nullable($value = true);
             $table->string('region')->nullable($value = true);
             $table->string('sales')->nullable($value = true);
             $table->string('programName')->nullable($value = true);
@@ -44,6 +44,6 @@ class CreateProjectsTable extends Migration
      */
     public function down()
     {
-       //Schema::dropIfExists('projects');
+       Schema::dropIfExists('projects');
     }
 }

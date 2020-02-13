@@ -7,55 +7,56 @@ use http\Env\Response;
 use Illuminate\Http\Request;
 use App\Project;
 use App\Member;
+use App\Level;
 use Illuminate\Validation\ValidationException;
+use function foo\func;
 
 class Projects extends Controller
 {
     function list(Request $request){
-
-       /* $collection = collect(['account_id' => 1, 'product' => 'Desk']);
-
-        if($collection->has('Desk')){
-            return response()->json(['error'=>'valid']);
-        }else{
-            return response()->json(['error'=>'no valid']);
-        }*/
-
-        return response()->json(Project::all());
-
-
-        $token = $request['token'];
-        $v = collect(Member::where('api_token',$token)->get());
-
-        if(json($v)->has('name')){
-            return response()->json(Project::all());
-        }else{
-            return response()->json(['error'=>'not valid']);
-        }
-
+        return response()->json(Project::all()->toArray());
     }
-
 
     function search(Request $request){
 
+        $token = $request->header('Authorization');
+        $user = Member::where('api_token',$token)->first()->toArray();
+        $userLevel = Level::where('level',$user['level'])->first()->toArray();
+        $search = $request->toArray();
+        unset($search['token']);
+        foreach ($userLevel as $key => $value){
+            if(isset($search[$key]) && strlen($value)==2){
+                if($value[0]=='S'){
+                    unset($search[$key]);
+                }else if($value[0]=='X'){
+                    if(strlen($search[$key])<2){
+                        unset($search[$key]);
+                    }
+                }
+            }
+        }
+        if(!sizeof($search)){
+            return response()->json(['error','Not enough condition for search']);
+        }
+        $data = Project::all()->toArray();
 
-            $programName = $request->input('programName');
-            $partNumber = $request->input('partNumber');
-            $sale = $request->input('sales');
-            $cn = $request->input('cn-customerName');
+        foreach ($search as $key =>$value){
+            $data = array_filter($data, function ($var) use ($key,$value) {
+                return strpos(strtoupper($var[$key]),strtoupper($value))!== false;
+            });
+        }
+        //return response()->json($userLevel);
+        foreach ($userLevel as $key=>$value){
+            if(strlen($value)==2 && $value[1]=='X'){
+                foreach($data as &$item) {
+                    if(isset($item[$key])){
+                        unset($item[$key]);
+                    }
+                    unset($item);
+                }
+            }
+        }
 
-
-            $data = Project::where('programName','LIKE', '%'.$programName.'%')
-                ->where('partNumber','LIKE', '%'.$partNumber.'%')
-                ->get();
-            return response()->json($data);
-
-
-
-
-
+        return response()->json(array_values($data));
     }
-
-
-
 }

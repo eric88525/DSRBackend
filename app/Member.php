@@ -8,13 +8,14 @@ use Illuminate\Notifications\Notifiable;
 
 class Member extends Authenticatable
 {
-    use HasApiTokens, Notifiable;
+    use  Notifiable;
     protected $table = 'members';
+
     protected $fillable = [
         'name', 'email', 'password','api_token','level'
     ];
     protected $hidden = [
-        'password', 'api_token','remember_token'
+        'password', 'api_token'
     ];
     /**
      * Get the identifier that will be stored in the subject claim of the JWT.

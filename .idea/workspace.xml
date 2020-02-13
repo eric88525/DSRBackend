@@ -3,15 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="06721037-9e4c-487f-afc4-a8e4b60e4cfa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Projects.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Member.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Member.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_04_142229_create_members_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_04_142229_create_members_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_02_145614_create_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_02_145614_create_projects_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +180,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../example/back" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -226,6 +222,7 @@
       <workItem from="1581421247114" duration="4534000" />
       <workItem from="1581516065842" duration="1109000" />
       <workItem from="1581518923440" duration="649000" />
+      <workItem from="1581587649735" duration="20577000" />
     </task>
     <task id="LOCAL-00001" summary="1.forgive jwt now use token instead&#10;2.user now can login and registered">
       <created>1581081133318</created>
@@ -241,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581350249600</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="嘗試使用LARAVEL的PASPORT功能">
+      <created>1581587731815</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581587731815</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +253,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.forgive jwt now use token instead&#10;2.user now can login and registered" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.forgive jwt now use token instead&#10;2.user now can login and registered" />
+    <MESSAGE value="嘗試使用LARAVEL的PASPORT功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="嘗試使用LARAVEL的PASPORT功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="721" y="243" key="#Deployment" timestamp="1580319279746">
@@ -302,11 +307,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580653556530" />
-    <state x="81" y="159" key="SettingsEditor" timestamp="1580822720540">
+    <state x="81" y="159" key="SettingsEditor" timestamp="1581604606122">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580549740881" />
-    <state x="81" y="159" key="SettingsEditor/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1580822720540" />
+    <state x="81" y="159" key="SettingsEditor/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581604606122" />
     <state x="655" y="378" key="com.intellij.ide.util.TipDialog" timestamp="1581587680077">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -325,17 +330,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580569978260" />
-    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1581424875236">
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1581597731376">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581424875236" />
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581597731376" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/MemberAuth.php</url>
-          <line>40</line>
+          <line>41</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
