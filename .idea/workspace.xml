@@ -2,22 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06721037-9e4c-487f-afc4-a8e4b60e4cfa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0faaaf69-3b37-4fef-a88c-a2a0930366d8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0faaaf69-3b37-4fef-a88c-a2a0930366d8/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/home.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/home.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Projects.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Member.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Member.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_02_145614_create_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_02_145614_create_projects_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_04_142229_create_members_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_04_142229_create_members_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +50,6 @@
         <item name="mcp@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="mcp: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="mcp@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="mcp: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="members: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -235,7 +222,10 @@
       <workItem from="1581265768795" duration="693000" />
       <workItem from="1581320009831" duration="5688000" />
       <workItem from="1581327973304" duration="310000" />
-      <workItem from="1581348529264" duration="870000" />
+      <workItem from="1581348529264" duration="7595000" />
+      <workItem from="1581421247114" duration="4534000" />
+      <workItem from="1581516065842" duration="1109000" />
+      <workItem from="1581518923440" duration="649000" />
     </task>
     <task id="LOCAL-00001" summary="1.forgive jwt now use token instead&#10;2.user now can login and registered">
       <created>1581081133318</created>
@@ -244,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581081133318</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1.forgive jwt now use token instead&#10;2.user now can login and registered">
+      <created>1581350249600</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581350249600</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,10 +265,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="570" y="260" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581093756720" />
-    <state x="453" y="99" key="CommitChangelistDialog2" timestamp="1581081129232">
+    <state x="453" y="99" key="CommitChangelistDialog2" timestamp="1581587727199">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="453" y="99" key="CommitChangelistDialog2/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581081129232" />
+    <state x="453" y="99" key="CommitChangelistDialog2/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581587727199" />
     <state x="648" y="253" key="FileChooserDialogImpl" timestamp="1581323121563">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -310,27 +307,38 @@
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580549740881" />
     <state x="81" y="159" key="SettingsEditor/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1580822720540" />
-    <state x="655" y="378" key="com.intellij.ide.util.TipDialog" timestamp="1581348532379">
+    <state x="655" y="378" key="com.intellij.ide.util.TipDialog" timestamp="1581587680077">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="748" y="389" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580806373140" />
-    <state x="655" y="378" key="com.intellij.ide.util.TipDialog/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581348532379" />
+    <state x="655" y="378" key="com.intellij.ide.util.TipDialog/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581587680077" />
     <state x="790" y="245" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580813261810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="790" y="245" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580813261810" />
-    <state x="562" y="116" width="635" height="801" key="find.popup" timestamp="1581079294952">
+    <state x="572" y="115" width="635" height="801" key="find.popup" timestamp="1581421589551">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="642" y="119" width="635" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580813453405" />
-    <state x="562" y="116" width="635" height="801" key="find.popup/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581079294952" />
+    <state x="572" y="115" width="635" height="801" key="find.popup/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581421589551" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1580569978260">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580569978260" />
-    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1581349978244">
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1581424875236">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581349978244" />
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581424875236" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/MemberAuth.php</url>
+          <line>40</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

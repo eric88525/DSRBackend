@@ -20,8 +20,7 @@ class CreateMembersTable extends Migration
             $table->string('password');
             $table->string('api_token', 80)->unique()->nullable()->default(null);
             $table->string('level')->default(null);
-            $table->timestamps();
-
+            $table->timestamps()
             ;
         });
     }
