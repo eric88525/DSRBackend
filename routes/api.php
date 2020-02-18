@@ -20,9 +20,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group(['prefix'=>'Auth'],function () {
     Route::post('login', 'MemberAuth@login');
+
+});
+Route::group(['prefix'=>'Auth','middleware'=>'admin'],function () {
     Route::post('register', 'MemberAuth@register');
 });
-
 
 Route::group(['prefix'=>'Auth','middleware'=>'data'],function () {
     Route::get('me','MemberAuth@me');

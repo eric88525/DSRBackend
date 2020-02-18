@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06721037-9e4c-487f-afc4-a8e4b60e4cfa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/AuthMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/adminAccountAuth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_02_145614_create_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_02_145614_create_projects_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +45,6 @@
         <item name="mcp@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="mcp: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="mcp@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="mcp: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="members: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -231,7 +226,7 @@
       <workItem from="1581844467754" duration="3487000" />
       <workItem from="1581923815960" duration="5363000" />
       <workItem from="1581941780689" duration="5434000" />
-      <workItem from="1582007909600" duration="7963000" />
+      <workItem from="1582007909600" duration="9287000" />
     </task>
     <task id="LOCAL-00001" summary="1.forgive jwt now use token instead&#10;2.user now can login and registered">
       <created>1581081133318</created>
@@ -275,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581954180749</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="搜索的api修正">
+      <created>1582027949500</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1582027949500</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +289,8 @@
     <MESSAGE value="project 搜索功能完成" />
     <MESSAGE value="project 詳細頁面api完成" />
     <MESSAGE value="project 詳細頁面api修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="project 詳細頁面api修正" />
+    <MESSAGE value="搜索的api修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="搜索的api修正" />
   </component>
   <component name="WindowStateProjectService">
     <state x="721" y="243" key="#Deployment" timestamp="1580319279746">
@@ -303,10 +306,10 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="570" y="260" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581093756720" />
-    <state x="453" y="99" key="CommitChangelistDialog2" timestamp="1581954178347">
+    <state x="453" y="99" key="CommitChangelistDialog2" timestamp="1582027946867">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="453" y="99" key="CommitChangelistDialog2/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581954178347" />
+    <state x="453" y="99" key="CommitChangelistDialog2/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1582027946867" />
     <state x="648" y="253" key="FileChooserDialogImpl" timestamp="1582027579193">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -363,10 +366,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580569978260" />
-    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1581924911009">
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1582028926184">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581924911009" />
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1582028926184" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
