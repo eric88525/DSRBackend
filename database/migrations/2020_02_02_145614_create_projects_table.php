@@ -30,8 +30,8 @@ class CreateProjectsTable extends Migration
             $table->string('productionDate')->nullable($value = true);
             $table->string('supportNeeded')->nullable($value = true);
             $table->string('update')->nullable($value = true);
-            $table->string('top10')->nullable($value = true);
-            $table->string('opportunity')->nullable($value = true);
+            $table->string('top10')->default('N');
+            $table->integer('opportunity')->nullable($value = true);
             $table->string('createdDate')->nullable($value = true);
 
         });

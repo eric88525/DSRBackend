@@ -33,10 +33,12 @@ class ProjectController extends Controller
         }
         $data = $datas[0];
         foreach ($userLevel as $key => $value) {
-            if (isset($data[$key]) && strlen($value) == 2) {
+            if (isset($data[$key]) && strlen($value) == 2 ) {
                 if ($value[1] != 'G') {
                     unset($data[$key]);
                 }
+            }else{
+                unset($data[$key]);
             }
         }
         unset($data['partNumber']);
@@ -61,24 +63,32 @@ class ProjectController extends Controller
         $search = $request->toArray();
         unset($search['token']);
         foreach ($userLevel as $key => $value){
-            if(isset($search[$key]) && strlen($value)==2){
-                if($value[0]!='S'){
+            if(isset($search[$key])){
+                if($value[0]=='X'){
                     unset($search[$key]);
                 }else if($value[0]=='S'){
                     if(strlen($search[$key])<2){
                         unset($search[$key]);
                     }
                 }
+            }else{
+                unset($search[$key]);
             }
         }
         if(!sizeof($search)){
-            return response()->json(['error','Not enough condition for search']);
+            return response()->json(['error'=>'Not enough condition for search']);
         }
-        $data = Project::all()->toArray();
+
+        $data = Project::orderby('programName')->get()->toArray();
         foreach ($search as $key =>$value){
-            $data = array_filter($data, function ($var) use ($key,$value) {
-                return strpos(strtoupper($var[$key]),strtoupper($value))!== false;
-            });
+            if($value) {
+                $data = array_filter($data, function ($var) use ($key, $value) {
+                    return strpos(strtoupper($var[$key]), strtoupper($value)) !== false;
+                });
+            }
+        }
+        if(!$data){
+            return response()->json(['error'=>'No match result']);
         }
         $data = array_values($data);
         $result = array();
