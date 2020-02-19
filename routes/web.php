@@ -11,10 +11,10 @@
 |
 */
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
-
+Route::get('/', function () {
+   return View::make('index');
+    // return redirect('index.html');
+});
 
 //Auth::routes();
 

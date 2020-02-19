@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="mcp@localhost" uuid="f6a62f51-b1d9-410c-b687-1d8bb69f8c6f">
+    <data-source source="LOCAL" name="mcpremote" uuid="f6a62f51-b1d9-410c-b687-1d8bb69f8c6f">
       <driver-ref>mariadb</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mariadb://localhost:3306/mcp</jdbc-url>
+      <jdbc-url>jdbc:mariadb://220.132.217.171:3306/mcp</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="MYlocal" uuid="89fc0785-4fbc-4a74-93f9-d6369278bb26">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/mcp</jdbc-url>
+      <driver-properties>
+        <property name="serverTimezone" value="UTC" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="@localhost [2]" uuid="af251173-4e60-4360-ba7e-f2353a7ebff8">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://localhost:3306</jdbc-url>
     </data-source>
   </component>
 </project>
