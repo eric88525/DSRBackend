@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMembersTable extends Migration
+class CreateProjectsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,32 @@ class CreateMembersTable extends Migration
      */
     public function up()
     {
-        Schema::create('members', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('password');
-            $table->string('api_token', 80)->unique()->nullable()->default(null);
-            $table->string('level')->default(null);
-            $table->timestamps();
+
+        Schema::create('projects', function (Blueprint $table) {
+            $table->string('no')->nullable($value = true);
+            $table->string('customerNameCN')->nullable($value = true);
+            $table->string('customerNameEN')->nullable($value = true);
+            $table->string('region')->nullable($value = true);
+            $table->string('sales')->nullable($value = true);
+            $table->string('prodLine')->nullable($value = true);
+            $table->string('programName')->nullable($value = true);
+            $table->integer('opportunity')->nullable($value = true);
+            $table->string('partNumber')->nullable($value = true);
+            $table->string('epsomnNote')->nullable($value = true);
+            $table->string('qty')->nullable($value = true);
+            $table->string('pcsBoard')->nullable($value = true);
+            $table->string('unitPrice')->nullable($value = true);
+            $table->string('amount')->nullable($value = true);
+            $table->string('dwStatus')->nullable($value = true);
+            $table->string('remark')->nullable($value = true);
+            $table->string('renewDay')->nullable($value = true);
+            $table->string('productionDate')->nullable($value = true);
+            $table->string('createDate')->nullable($value = true);
+            $table->string('industrySegment')->nullable($value = true);
+            $table->string('top10')->nullable($value = true);
+            $table->string('regLineStatus')->nullable($value = true);
+            $table->string('note')->nullable($value = true);
+
         });
     }
 
@@ -31,6 +49,6 @@ class CreateMembersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('members');
+        Schema::dropIfExists('projects');
     }
 }

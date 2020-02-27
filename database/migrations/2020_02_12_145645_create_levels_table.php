@@ -15,24 +15,29 @@ class CreateLevelsTable extends Migration
     {
         Schema::create('levels', function (Blueprint $table) {
             $table->string('level');
-            $table->string('customerNameCN')->default('00');
-            $table->string('customerNameEN')->default('00');
-            $table->string('region')->default('00');
-            $table->string('sales')->default('00');
-            $table->string('programName')->default('00');
-            $table->string('prodLine')->default('00');
-            $table->string('partNumber')->default('00');
-            $table->string('projectUnits')->default('00');
-            $table->string('qtyBoard')->default('00');
-            $table->string('asp')->default('00');
-            $table->string('amount')->default('00');
-            $table->string('confidencePercent')->default('00');
-            $table->string('productionDate')->default('00');
-            $table->string('supportNeeded')->default('00');
-            $table->string('update')->default('00');
-            $table->string('top10')->default('00');
-            $table->string('opportunity')->default('00');
-            $table->string('createdDate')->default('00');
+            $table->string('no');
+            $table->string('customerNameCN');
+            $table->string('customerNameEN');
+            $table->string('region');
+            $table->string('sales');
+            $table->string('prodLine');
+            $table->string('programName');
+            $table->string('opportunity');
+            $table->string('partNumber');
+            $table->string('epsomnNote');
+            $table->string('qty');
+            $table->string('pcsBoard');
+            $table->string('unitPrice');
+            $table->string('amount');
+            $table->string('dwStatus');
+            $table->string('remark');
+            $table->string('renewDay');
+            $table->string('productionDate');
+            $table->string('createDate');
+            $table->string('industrySegment');
+            $table->string('top10');
+            $table->string('regLineStatus');
+            $table->string('note');
         });
     }
 

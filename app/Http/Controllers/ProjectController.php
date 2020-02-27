@@ -28,7 +28,7 @@ class ProjectController extends Controller
         $parts = array();
         if($userLevel['partNumber'][1] == 'G'){
             foreach ($datas as $i){
-                array_push($parts,$i['partNumber']);
+                array_push($parts,['partNumber'=>$i['partNumber'],'unitPrice'=>$i['unitPrice']]);
             }
         }
         $data = $datas[0];
@@ -42,6 +42,7 @@ class ProjectController extends Controller
             }
         }
         unset($data['partNumber']);
+        unset($data['unitPrice']);
         if($userLevel['partNumber'][1] == 'G'){
             return response()->json([
                 'project'=>$data,
@@ -56,12 +57,15 @@ class ProjectController extends Controller
 
 
     function search(Request $request){
-
+        # 拿到驗證
         $token = $request->header('Authorization');
+        # 確認身分和階級
         $user = Member::where('api_token',$token)->first()->toArray();
         $userLevel = Level::where('level',$user['level'])->first()->toArray();
         $search = $request->toArray();
         unset($search['token']);
+
+        # 把超出權限的搜索給消除
         foreach ($userLevel as $key => $value){
             if(isset($search[$key])){
                 if($value[0]=='X'){
@@ -75,11 +79,16 @@ class ProjectController extends Controller
                 unset($search[$key]);
             }
         }
+        # 沒東西搜掰掰
         if(!sizeof($search)){
             return response()->json(['error'=>'Not enough condition for search']);
         }
 
-        $data = Project::orderby('programName')->get()->toArray();
+        $first_value=reset($search);
+        $first_key = key($search);
+
+        # 拿資料並搜索排序
+        $data = Project::where($first_key,'like','%'.$first_value.'%')->orderby('programName')->get()->toArray();
         foreach ($search as $key =>$value){
             if($value) {
                 $data = array_filter($data, function ($var) use ($key, $value) {
@@ -90,6 +99,7 @@ class ProjectController extends Controller
         if(!$data){
             return response()->json(['error'=>'No match result']);
         }
+        # 整理資料(這時還會有重複的)
         $data = array_values($data);
         $result = array();
         foreach ($data as $d){
