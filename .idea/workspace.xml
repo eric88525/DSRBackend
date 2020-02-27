@@ -2,18 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06721037-9e4c-487f-afc4-a8e4b60e4cfa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_18_121743_admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_04_142229_create_members_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_04_142229_create_members_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/add_property.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/animated.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/core.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/icons.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/larger.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/list.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/path.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/less/variables.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/assets/source/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/banner_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/bradcam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/disabled-check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/disabled-radio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/home_details.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/info_banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/main-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/main-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/main-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/main-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/main-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/main-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/main-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/main-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/polyfills-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/polyfills-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/polyfills-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/polyfills-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/primary-check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/primary-radio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/property.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/runtime-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/runtime-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/runtime-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/runtime-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/styles-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/styles-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/styles-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/styles-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/success-check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/success-radio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/testmonial.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/vendor-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/vendor-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/vendor-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/vendor-es5.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -190,7 +238,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../example/back" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -243,6 +291,10 @@
       <workItem from="1582034362235" duration="4413000" />
       <workItem from="1582087243680" duration="6646000" />
       <workItem from="1582096589655" duration="7080000" />
+      <workItem from="1582122757746" duration="779000" />
+      <workItem from="1582128010893" duration="1657000" />
+      <workItem from="1582131459490" duration="39000" />
+      <workItem from="1582810571861" duration="510000" />
     </task>
     <task id="LOCAL-00001" summary="1.forgive jwt now use token instead&#10;2.user now can login and registered">
       <created>1581081133318</created>
@@ -326,23 +378,23 @@
     </state>
     <state x="212" y="358" width="1437" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580648562442" />
     <state x="240" y="264" width="1103" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1582102473926" />
-    <state x="567" y="335" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582094347895">
+    <state x="567" y="335" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582128619984">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="567" y="335" key="#com.intellij.fileTypes.FileTypeChooser/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1582094347895" />
+    <state x="567" y="335" key="#com.intellij.fileTypes.FileTypeChooser/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1582128619984" />
     <state x="570" y="260" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581093756720">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="570" y="260" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1581093756720" />
-    <state x="453" y="99" key="CommitChangelistDialog2" timestamp="1582029469923">
+    <state x="453" y="99" key="CommitChangelistDialog2" timestamp="1582811082874">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="453" y="99" key="CommitChangelistDialog2/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1582029469923" />
-    <state x="648" y="253" key="FileChooserDialogImpl" timestamp="1582027579193">
+    <state x="453" y="99" key="CommitChangelistDialog2/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1582811082874" />
+    <state x="648" y="253" key="FileChooserDialogImpl" timestamp="1582131495062">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580814024197" />
-    <state x="648" y="253" key="FileChooserDialogImpl/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1582027579193" />
+    <state x="648" y="253" key="FileChooserDialogImpl/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1582131495062" />
     <state width="1877" height="437" key="GridCell.Tab.0.bottom" timestamp="1580579565921">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -389,28 +441,28 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="570" y="310" width="540" height="602" key="com.intellij.database.dbimport.ImportUtil.MyDialog/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1582102561746" />
-    <state x="655" y="378" key="com.intellij.ide.util.TipDialog" timestamp="1582096628848">
+    <state x="655" y="378" key="com.intellij.ide.util.TipDialog" timestamp="1582128366563">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="748" y="389" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580806373140" />
-    <state x="655" y="378" key="com.intellij.ide.util.TipDialog/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1582096628848" />
+    <state x="655" y="378" key="com.intellij.ide.util.TipDialog/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1582128366563" />
     <state x="790" y="245" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580813261810">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="790" y="245" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580813261810" />
-    <state x="572" y="115" width="635" height="801" key="find.popup" timestamp="1582098624239">
+    <state x="572" y="115" width="635" height="801" key="find.popup" timestamp="1582128858159">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="642" y="119" width="635" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580813453405" />
-    <state x="572" y="115" width="635" height="801" key="find.popup/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1582098624239" />
+    <state x="572" y="115" width="635" height="801" key="find.popup/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1582128858159" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1580569978260">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1580569978260" />
-    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1582102021060">
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1582811018630">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1582102021060" />
+    <state x="503" y="217" width="672" height="678" key="search.everywhere.popup/1680.-30.1920.1040/0.0.1680.1010@0.0.1680.1010" timestamp="1582811018630" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

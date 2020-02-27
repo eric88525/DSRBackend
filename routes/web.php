@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-   return View::make('index');
-    // return redirect('index.html');
+#直接導引到前端
+Route::get('/public', function () {
+    //return View::make('index');
+    return redirect('你的前端網址');
 });
 
 //Auth::routes();

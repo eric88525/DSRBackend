@@ -35,7 +35,7 @@ Route::group(['prefix'=>'Auth','middleware'=>'data'],function () {
 
 Route::group(['middleware'=>'data'],function () {
     Route::post('search','ProjectController@search');
-    Route::get('projects','ProjectController@list');
+    // Route::get('projects','ProjectController@list');
     Route::get('projects/{opportunity}', 'ProjectController@detail');
 });
 
